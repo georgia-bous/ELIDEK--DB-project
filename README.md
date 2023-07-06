@@ -21,7 +21,9 @@ Through the app a user can:
 - top 5 managers that have given the biggest financing
 
 I use Python's Flask for the backend and basic HTML with some JS for the frontend.
+
   **HOW TO USE:**
+  
 First go to MySQL Workbench and run the sql scripts (add the trigger manually to the Works_in table).
 Then open the project folder in your IDE and create a file db.yaml with contents:
 mysql_host: 'localhost'
