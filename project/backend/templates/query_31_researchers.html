@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text_prop {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color:black;
+    }
+
+    .header{
+        text-align:center;
+        font-size: large;
+    }
+
+    .button_center{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .button {
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+
+  
+
+</style>
+<body>
+    <div class = "button_center">
+        <label class = "text_prop">Choose a Project</label>
+        <br>
+        <br>
+    </div>
+    <div> 
+        <form method="POST" action="{{url_for('query_31_researchers_result')}}">
+        <div class = "button_center">
+        <select name = "project_select" class = "text_prop">
+        <option value = "1">Span</option>
+        <option value = "2">Aerified</option>
+        <option value = "3">Y-Solowarm</option>
+        <option value = "4">Tres-Zap</option>
+        <option value = "5">Fix San</option>
+        <option value = "6">Biodex</option>
+        <option value = "7">Veribet</option>
+        <option value = "8">Viva</option>
+        <option value = "9">Zaam-Dox</option>
+        <option value = "10">Y-Solowarm2</option>
+        <option value = "11">Tresom</option>
+        <option value = "12">Overhold</option>
+        <option value = "13">Namfix</option>
+        <option value = "14">Vagram</option>
+        <option value = "15">Sonair</option>
+        <option value = "16">Job</option>
+        <option value = "17">Tampflex</option>
+        <option value = "18">Stim</option>
+        <option value = "19">Y-find</option>
+        <option value = "20">Cardify</option>
+        <option value = "21">Sub-Ex</option>
+        <option value = "22">Voltsillam</option>
+        <option value = "23">Fintone</option>
+        <option value = "24">Prodder</option>
+        <option value = "25">Wrapsafe</option>
+        <option value = "26">Sonair2</option>
+        <option value = "27">Mat Lam Tam</option>
+        <option value = "28">Temp</option>
+        <option value = "29">Holdlamis</option>
+        <option value = "30">Bitchip</option>
+        <option value = "31">Wrapsafe</option>
+        <option value = "32">Home Ing</option>
+        <option value = "33">Zontrax</option>
+        <option value = "33">Holdlamis</option>
+        <option value = "34">Vagram</option>
+        <option value = "35">Holdlamis</option>
+        <option value = "36">Redhold</option>
+        <option value = "37">Zaam-Dox</option>
+        <option value = "38">Trippledex</option>
+        <option value = "39">Konklux</option>
+        <option value = "40">Flowdesk</option>
+        <option value = "41">Zoolab</option>
+        <option value = "42">Zoolab2</option>
+        <option value = "43">Tresom</option>
+        <option value = "44">Span2</option>
+        <option value = "45">Job2</option>
+        <option value = "46">Fix San</option>
+        <option value = "47">Latlux</option>
+        <option value = "48">Y-Solowarm2</option>
+        <option value = "49">Bytecard</option>
+        <option value = "50">Alpha</option>
+        <option value = "51">Home Ing</option>
+        <option value = "52">Bitwolf</option>
+        <option value = "53">Transcof</option>
+        <option value = "54">Cardguard</option>
+        <option value = "55">Andalax</option>
+        <option value = "56">Subin</option>
+        <option value = "57">Latlux</option>
+        <option value = "58">Y-find2</option>
+        <option value = "59">Bigtax</option>
+        <option value = "60">Duobam</option>
+        <option value = "61">Daltfresh</option>
+        <option value = "62">Konklab</option>
+        <option value = "63">Sub-Ex</option>
+        <option value = "64">Opela</option>
+        <option value = "65">Latlux2</option>
+        <option value = "66">Flexidy</option>
+        <option value = "67">Bamity</option>
+        <option value = "68">Tempsoft</option>
+        <option value = "69">Y-find3</option>
+        <option value = "70">Overhold</option>
+
+
+        
+
+
+        </select>
+        </div>
+        <br>
+        <br>
+        <div class = "button_center">
+        <a href = "http://127.0.0.1:5000/query_31_researchers_result"> <button class = "button">Search</button> </a> </div>
+        </div>
+        </form>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/"> <button class = "button">Back</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+</body>
+</html>

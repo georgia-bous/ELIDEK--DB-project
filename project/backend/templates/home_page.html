@@ -1,0 +1,204 @@
+<!doctype html>
+ <html>
+<head>
+    <title>Elidek</title>
+</head>
+<style>
+    .text_prop {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color:black;
+    }
+
+    .header{
+        text-align:center;
+        font-size: large;
+    }
+
+    .button_center{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .button {
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+
+  
+
+</style>
+
+
+<body>
+        <div class = "header"><h1>Welcome to Elidek</h1></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+            <hr>
+            <hr>
+            <br>
+            <div class = "text_prop"><label >See information about the various Programs, Projects and Researchers of Elidek</label></div>
+            <br>
+            <br>
+            <div class = "button_center">
+                <a href = "http://127.0.0.1:5000/query_31"> <button class = "button">Search</button> </a>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <hr>
+            <br>
+            <br>
+            <br>
+
+
+            <div class = "text_prop"><label >See two views of the Schema</label></div>
+            <br>
+            <br>
+            <div class = "button_center">
+                <a href = "http://127.0.0.1:5000/query_32"> <button class = "button">Search</button> </a>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <hr>
+            <br>
+            <br>
+            <br>
+
+
+
+
+            <div class = "text_prop"><label >See the Projects and the Researchers of any Field</label></div>
+            <br>
+            <br>
+            <div> 
+                <form method="POST" action="{{url_for('query_33')}}">
+                <div class = "button_center">
+                <select name = "field_select" class = "text_prop">
+                <option value = "Mathematics">Mathematics</option>
+                <option value = "Physics">Physics</option>
+                <option value = "Chemistry">Chemistry</option>
+                <option value = "Biology">Biology</option>
+                <option value = "Electrical Engineering">Electrical Engineering</option>
+                <option value = "Mechanical Engineering">Mechanical Engineering</option>
+                <option value = "Mechatronics">Mechatronics</option>
+                <option value = "Aeronautics">Aeronautics</option>
+                <option value = "Robotics">Robotics</option>
+                <option value = "Artificial Intelligence">Artificial Intelligence</option>
+                <option value = "Signal Processing">Signal Processing</option>
+                <option value = "Control">Control Engineering</option>
+                <option value = "Software Engineering">Software Engineering</option>
+                <option value = "Embedded Systems">Embedded Systems</option>
+                <option value = "Computer Architecture">Computer Architecture</option>
+
+
+                </select>
+                </div>
+                <br>
+                <br>
+                <div class = "button_center">
+                <a href = "http://127.0.0.1:5000/query_33"> <button class = "button">Search</button> </a> </div>
+                </div>
+                </form>
+                <br>
+                <br>
+                <hr>
+                <hr> 
+        <br>
+        <br>
+        <br>
+        <div class = "text_prop"><label >See the Organizations that have received the same number of Projects in 2 consecutive years</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/query_34"> <button class = "button">Search</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        
+        <div class = "text_prop"><label >See top-3 pairs of multi-field Projects</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/query_35"> <button class= "button">Search</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class = "text_prop"><label >See the youngest researchers that work in the largest number of Projects</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/query_36"> <button class = "button">Search</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+
+        <div class = "text_prop"><label >See top-5 Executives of Elidek that have given the largest fundings in companies</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/query_37"> <button class = "button">Search</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+
+        <div class = "text_prop"><label >See the Researchers that work in 5 or more Projects without Deliverables</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/query_38"> <button class = "button">Search</button> </a></div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+
+        <div class = "text_prop"><label> Modify data of database</label></div>
+        <br>
+        <br>
+        <div class = "button_center"><a href = "http://127.0.0.1:5000/modify"> <button class = "button">Go!</button> </a></div>
+        <br>
+        <hr>
+        <hr>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text_prop {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color:black;
+    }
+
+    .header{
+        text-align:center;
+        font-size: large;
+    }
+
+    .button_center{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .button {
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    </style>
+<body>
+    <div class = "text_prop"><label>Date</label></div>
+    <br>
+    <div>
+    <form method="POST" action="{{url_for('query_31_projects_result_date')}}">
+    <div class = "button_center">
+    <input type="date" id="start_date" name="start_date" lang="en" class = "text_prop"> 
+    </div>
+    <br>
+    <br>
+    <div class = "button_center">
+    <a href = "http://127.0.0.1:5000/query_31_projects_result_date"> <button class = "button">Search</button> </a> </div>
+    </div>
+    </form>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+
+
+    <div class = "text_prop"><label>Duration</label>
+        <br>
+        <br>
+        <div>
+        <form method="POST" action="{{url_for('query_31_projects_result_duration')}}">
+
+            <select name = "duration_select"class = "text_prop">
+            <option value = "365">Less that 1 year</option>
+            <option value = "730">Less that two years</option>
+            <option value = "1095">Less that three years</option>
+            <option value = "1460">Less that four years</option>
+            
+
+
+            </select>
+            <br>
+            <br>
+            <br>
+            <div class = "button_center">
+            
+            <a href = "http://127.0.0.1:5000/query_31_projects_result_duration"> <button class = "button">Search</button> </a> </div>
+            </div>
+            </form>
+        </div>
+    
+    
+    </div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <div class = "text_prop"><label>Executive</label> 
+        <br>
+        <br>
+        <div>
+        <form method="POST" action="{{url_for('query_31_projects_result_executive')}}">
+
+            <select name = "executive_select" class = "text_prop">
+            <option value = "1">Curner Forest</option>
+            <option value = "2">Harkess Avis</option>
+            <option value = "3">Vowell Anthe</option>
+            <option value = "4">Domsalla Gherardo</option>
+            <option value = "5">Baskerfield Petronia</option>
+            <option value = "6">McNern Chery</option>
+            <option value = "7">Kincade Darlleen</option>
+            <option value = "8">Cerman Godard</option>
+            <option value = "9">Trasler Marylin</option>
+            <option value = "10">Darfirth Dagny</option>
+            <option value = "11">Nickolls Yvette</option>
+            <option value = "12">Aburrow Derick</option>
+            <option value = "13">Butt Serena</option>
+            <option value = "14">Mays Kelsey</option>
+            <option value = "15">Riggulsford Alleen</option>
+            <option value = "16">Kynd Felicle</option>
+            <option value = "17">Gloves Ibrahim</option>
+            <option value = "18">Coldbridge Hadlee</option>
+            <option value = "19">Addlestone Delly</option>
+            <option value = "20">Rawe Elicia</option>
+
+
+            </select>
+            <br>
+            <br>
+            <br>
+            <div class = "button_center">
+            <a href = "http://127.0.0.1:5000/query_31_projects_result_executive"> <button class = "button">Search</button> </a> </div>
+            </div>
+            </form>
+    
+            </div>
+    
+    </div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <br>
+    <div class = "button_center"><a href = "http://127.0.0.1:5000/"> <button class = "button">Back</button> </a></div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Edit Researcher</title>
+</head>
+{% endblock %}
+
+{% block body %}
+
+<div class=".col-md-5.offset-md-4">
+    <div class="card card-body">
+        <form action="/update_res/{{res.0}}" method="POST">
+            <div class="form-group">
+                <input type="number" name="researcher_id" placeholder="Researcher ID" value="{{res.0}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="organization_id" placeholder="Organization ID" value="{{res.1}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="forename" placeholder="Forename" value="{{res.2}}" class="form-control">
+            </div>
+            <div class="form-control">
+                <input type="text" name="surname" placeholder="Surname" value="{{res.3}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="sex" placeholder="Gender" value="{{res.4}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" name="birthdate" placeholder="Birthdate" value="{{res.5}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" name="starting_work_day" placeholder="First day at work" value="{{res.6}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit"> SAVE </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

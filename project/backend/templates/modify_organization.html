@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<head>
+    <title>Organization</title>
+</head>
+{% endblock %}
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-5">
+            {% with messages=get_flashed_messages() %}
+            {% if messages %}
+                {% for mes in messages %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{mes}} 
+                        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <div class="card card-body">
+                <form action="/add_org" method="POST">
+                    <div class="form-group">
+                        <input type="number" name="organization_id" placeholder="Organization ID" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="organization_name" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="abbreviation" placeholder="Abbreviation" class="form-control">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="street_name" placeholder="Street" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="street_number" placeholder="Street No." class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="postal_code" placeholder="Postal Code" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="city" placeholder="City" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="organization_type" placeholder="Type" class="form-control">
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" class="btn btn-primary btn-block">Save </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <table class="table table-striped table-bordered bg-white table-sm">
+                <thead>
+                    <tr>
+                        <td>Organization ID</td>
+                        <td>Name</td>
+                        <td>Abbreviation</td>
+                        <td>Street</td>
+                        <td>Street No.</td>
+                        <td>Postal Code</td>
+                        <td>City</td>
+                        <td>Type</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for o in org %}
+                        <tr>
+                            <td>{{ o.0 }}</td>
+                            <td>{{ o.1 }}</td>
+                            <td>{{ o.2 }}</td>
+                            <td>{{ o.3 }}</td>
+                            <td>{{ o.4 }}</td>
+                            <td>{{ o.5 }}</td>
+                            <td>{{ o.6 }}</td>
+                            <td>{{ o.7 }}</td>
+                            <td>
+                                <a href="/edit_org/{{o.0}}" class="btn btn-secondary">EDIT</a>
+                                <a href="/delete_org/{{o.0}}" class="btn btn-danger">DELETE</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>            
+        </div>
+    </div>
+
+{% endblock %}

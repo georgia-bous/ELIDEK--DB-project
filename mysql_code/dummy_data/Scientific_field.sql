@@ -1,0 +1,15 @@
+insert into Scientific_field (field_id, field_name, field_description) values (1, 'Mathematics', 'id luctus nec molestie sed justo pellentesque viverra');
+insert into Scientific_field (field_id, field_name, field_description) values (2, 'Physics', 'eget nunc donec quis orci eget orci vehicula');
+insert into Scientific_field (field_id, field_name, field_description) values (3, 'Chemistry', 'a ipsum integer a nibh in quis justo maecenas rhoncus aliquam');
+insert into Scientific_field (field_id, field_name, field_description) values (4, 'Biology', 'posuere metus vitae ipsum aliquam non mauris morbi');
+insert into Scientific_field (field_id, field_name, field_description) values (5, 'Electrical Engineering', 'justo eu massa donec dapibus duis at velit eu est congue');
+insert into Scientific_field (field_id, field_name, field_description) values (6, 'Mechanical Engineering', 'porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non');
+insert into Scientific_field (field_id, field_name, field_description) values (7, 'Mechatronics', 'integer pede justo lacinia eget tincidunt eget tempus vel pede morbi');
+insert into Scientific_field (field_id, field_name, field_description) values (8, 'Aeronautics', 'morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate');
+insert into Scientific_field (field_id, field_name, field_description) values (9, 'Robotics', 'lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl');
+insert into Scientific_field (field_id, field_name, field_description) values (10, 'Artificial Intelligence', 'phasellus sit amet erat nulla tempus vivamus in felis eu');
+insert into Scientific_field (field_id, field_name, field_description) values (11, 'Signal Processing', 'laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis');
+insert into Scientific_field (field_id, field_name, field_description) values (12, 'Control', 'et ultrices posuere cubilia curae donec pharetra');
+insert into Scientific_field (field_id, field_name, field_description) values (13, 'Software Engineering', 'eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula');
+insert into Scientific_field (field_id, field_name, field_description) values (14, 'Embedded Systems', 'mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu');
+insert into Scientific_field (field_id, field_name, field_description) values (15, 'Computer Architecture', 'lectus suspendisse potenti in eleifend quam a odio');

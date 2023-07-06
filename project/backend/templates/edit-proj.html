@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Edit Project</title>
+</head>
+{% endblock %}
+
+{% block body %}
+
+<div class=".col-md-5.offset-md-4">
+    <div class="card card-body">
+        <form action="/update_proj/{{proj.0}}" method="POST">
+            <div class="form-group">
+                <input type="number" name="project_id" placeholder="Project ID" value="{{proj.0}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="title" placeholder="Title" value="{{proj.1}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="summary" placeholder="Summary" value="{{proj.2}}" class="form-control">
+            </div>
+            <div class="form-control">
+                <input type="date" name="start_date" placeholder="Start Date" value="{{proj.3}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" name="end_date" placeholder="End Date" value="{{proj.4}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="funding" placeholder="Funding" value="{{proj.5}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" name="evaluation_date" placeholder="Evaluation Date" value="{{proj.6}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="grade" placeholder="Grade" value="{{proj.7}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="organization_id" placeholder="Organization ID" value="{{proj.8}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="program_id" placeholder="Program ID" value="{{proj.9}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="executive_id" placeholder="Executive ID" value="{{proj.10}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="supervisor_id" placeholder="Supervisor ID" value="{{proj.11}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="evaluator_id" placeholder="Evaluator ID" value="{{proj.12}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit"> SAVE </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

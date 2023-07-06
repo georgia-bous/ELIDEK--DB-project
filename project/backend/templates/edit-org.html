@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Edit Organization</title>
+</head>
+{% endblock %}
+
+{% block body %}
+
+<div class=".col-md-5.offset-md-4">
+    <div class="card card-body">
+        <form action="/update_org/{{org.0}}" method="POST">
+            <div class="form-group">
+                <input type="number" name="organization_id" placeholder="Organization ID" value="{{org.0}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="organization_name" placeholder="Name" value="{{org.1}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="abbreviation" placeholder="Abbreviation" value="{{org.2}}" class="form-control">
+            </div>
+            <div class="form-control">
+                <input type="text" name="street_name" placeholder="Street" value="{{org.3}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="street_number" placeholder="Street No." value="{{org.4}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="postal_code" placeholder="Postal Code" value="{{org.5}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="city" placeholder="City" value="{{org.6}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="organization_type" placeholder="Type" value="{{org.7}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit"> SAVE </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
