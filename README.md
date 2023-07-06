@@ -10,6 +10,7 @@ In the database we store information on:
 (see in Docs for more info)
 
 Through the app a user can:
+
 -filter the projects on start/end date, duration or manager
 -see the projects on which a researcher is working
 -the projects and researcher working on a specific field the last year
