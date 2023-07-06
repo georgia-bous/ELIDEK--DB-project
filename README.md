@@ -26,9 +26,14 @@ I use Python's Flask for the backend and basic HTML with some JS for the fronten
   
 First go to MySQL Workbench and run the sql scripts (add the trigger manually to the Works_in table).
 Then open the project folder in your IDE and create a file db.yaml with contents:
+
 mysql_host: 'localhost'
+
 mysql_user: 'root'
+
 mysql_password: [password of MySQL Workbench]
+
 mysql_db: 'elidek'
+
 
 Afterwards, run the db_flask_app.py file and open your browser in localhost to interact with the application.
