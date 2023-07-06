@@ -13,4 +13,7 @@ Through the app a user can:
 -filter the projects on start/end date, duration or manager
 -see the projects on which a researcher is working
 -the projects and researcher working on a specific field the last year
--
+-which organisations have the same number of projects for 2 consecutive years with at leat 10 projects per year
+-which projects cover more than one field and which pair of fields is the more often
+-which researchers, younger than 40 years old, work in the biggest number of projects and what is that number
+-top 5 managers that have given the biggest financing
